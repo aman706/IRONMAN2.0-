@@ -1,4 +1,4 @@
 @echo off
-TITLE Masha Robot
-:: Enables virtual env mode and then starts Masha
-env\scripts\activate.bat && py -m MashaRoBot
+TITLE Iron Robo
+:: Enables virtual env mode and then starts Ironman
+env\scripts\activate.bat && py -m ironrobo

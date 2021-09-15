@@ -1,0 +1,21 @@
+name: Lets Start IROANMAN2.O
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "I am now online!"
+          replace: "Yes I'm alive 😹"
+      - name: Pull All Updates
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '👣IRONMAN2.O'
+          commit_options: '--no-verify'
+          repository: .
+          commit_user_name: CALLMEVP
+          commit_user_email: 73339924+callmevp0707@users.noreply.github.com
+          commit_author: callmevp <73339924+callmevp@users.noreply.github.com>
